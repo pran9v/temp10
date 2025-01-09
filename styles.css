@@ -514,7 +514,7 @@ footer {
     padding: 2rem;
    // margin-top: 3rem;
     background: rgb(255, 255, 255);
-    color: black
+    color: white;
 }
 
 .product-badge {
@@ -715,16 +715,17 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .footer-section {
+        color: white;
+    }
     
     .social-links {
         justify-content: center;
     }
     
     .contact-info li {
-        display:none;
-    }
-    .contact-card {
-        display: none;
+        color: rgb(207, 206, 205);
     }
 } 
 
@@ -1224,7 +1225,7 @@ p {
 .hero-content h1 {
     color: rgb(255, 255, 255);
     font-family: 'Canva Sans', 'Open Sans', sans-serif;
-    font-size: 6.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 3px 2px rgba(255, 34, 34, 0.5);
     font-weight: 700;
@@ -1236,11 +1237,11 @@ p {
 
 .hero-content h2 {
     color:rgb(255, 254, 254);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgb(248, 115, 115);
    // background-color: rgb(255, 27, 106);
-    max-width: 250px;
+    max-width: 550px;
     margin-left: auto;  /* Add these two margin properties */
     margin-right: auto; /* to center the h1 element */
 }
@@ -1315,12 +1316,12 @@ p {
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1rem;
         color: white
     }
 
     .hero-content h2 {
-        font-size: 1.5rem;
+        font-size: 0.5rem;
     }
 } 
 
@@ -1390,7 +1391,7 @@ p {
     .hero-content h1 {
         color: rgb(255, 255, 255);
         font-family: 'Canva Sans', 'Open Sans', sans-serif;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 1rem;
         text-shadow: 2px 3px 2px rgba(163, 142, 66, 0.5);
         font-weight: 700;
@@ -1402,7 +1403,7 @@ p {
     
     .hero-content h2 {
         color:rgb(255, 77, 77);
-        font-size: 1.5rem;
+        font-size: 0.5rem;
         margin-bottom: 1.5rem;
         text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
         //background-color: rgb(255, 27, 106);
@@ -1538,11 +1539,12 @@ p {
     }
 
     .hero-content h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .hero-content h2 {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
+        max-width: 300px;
     }
 
     .cta-button {
@@ -1579,6 +1581,7 @@ p {
 
     .footer-section {
         align-items: center; /* Center all content in footer sections */
+        color: white;
     }
 
     .footer-logo {
@@ -1597,6 +1600,7 @@ p {
     .newsletter-form button {
         width: 100%;
     }
+
 
     /* Thank You Page */
     .thank-you {
