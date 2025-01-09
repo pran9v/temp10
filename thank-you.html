@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>globexoa - marketplace for socks</title>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.jpg">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.jpg">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.jpg">
+        <link rel="manifest" href="./assets/site.webmanifest">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+            rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+        
+    
+            .features-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: center;
+                padding: 20px;
+                background: #000000;
+            }
+    
+            .feature {
+                flex: 1 1 300px;
+                margin: 10px;
+                padding: 20px;
+                box-sizing: border-box;
+                background: #ffffff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    
+            .feature i {
+                font-size: 3rem;
+                color: #f65151;
+                margin-bottom: 10px;
+            }
+    
+            .feature h3 {
+                font-size: 1.5rem;
+                color: #333;
+                margin: 10px 0;
+            }
+    
+            .feature p {
+                font-size: 1rem;
+                color: #555;
+            }
+    
+            @media (max-width: 768px) {
+                .features-section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+    
+                .feature {
+                    flex: 1 1 auto;
+                    width: 90%;
+                }
+            }
+        </style>
+    
+    </head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/logo.jpg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html#products"><i class="fas fa-shopping-basket"></i> Explore</a></li>
+                <li><a href="privacy.html"><i class="fas fa-user-lock"></i> Privacy</a></li>
+                <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thank-you">
+        <div class="thank-you-content">
+            <img src="./assets/thankyou.png" alt="Order Icon" class="thank-you-icon" />
+            <h1>Thank you for choosing us!</h1>
+            <p>
+                We sincerely appreciate your support. If you have any questions or need assistance, don't hesitate to reach out. Enjoy your shopping experience!
+            </p>
+        </div>
+    </main>
+
+    <script>
+        // Display order details
+        const order = JSON.parse(localStorage.getItem('lastOrder'));
+        if (order) {
+            document.getElementById('orderDetails').innerHTML = `
+                <h3><strong>Order Details</strong></h3>
+                <p><strong>Product:</strong> ${order.product}</p>
+                <p><strong>Price:</strong> $${order.price}</p>
+                <p><strong>Date:</strong> ${new Date(order.date).toLocaleString()}</p>
+            `;
+        }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let lastScrollTop = 0;
+            const header = document.querySelector('header');
+            
+            if (!header) {
+                console.error('Header element not found');
+                return;
+            }
+    
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scroll down
+                    header.classList.add('hidden-header');
+                } else {
+                    // Scroll up
+                    header.classList.remove('hidden-header');
+                }
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+</body>
+</html>

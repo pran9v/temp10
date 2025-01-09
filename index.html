@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>globexoa - marketplace for socks</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.jpg">
+    <link rel="manifest" href="./assets/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500&family=DM+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .features-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            padding: 20px;
+            background: rgba(83, 83, 83, 0.95);
+        }
+
+        .feature {
+            flex: 1 1 300px;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #f65151;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .features-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feature {
+                flex: 1 1 auto;
+                width: 90%;
+            }
+        }
+    </style>
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/logo.jpg" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html#products"><i class="fas fa-shopping-basket"></i> Explore</a></li>
+                <li><a href="privacy.html"><i class="fas fa-user-lock"></i> Privacy</a></li>
+                <li><a href="terms.html"><i class="fas fa-file-alt"></i> Terms</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Banner Section -->
+        <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Socks</h1>
+                <h2>your child will love!</h2>
+                <a href="#products" class="cta-button">
+                    Shop Now <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="home-product-header" id="products">
+            <h2>Our Products
+            </h2>
+            <p>Discover the Perfect Socks to Keep Your Little One Happy and Cozy</p>
+        </section>
+        <section id="products" class="products-grid globexoa-products">
+            <section id="products" class="products-grid">
+                <!-- Products will be loaded here dynamically -->
+            </section>
+        </section>
+
+        <section class="testimonial-section">
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Very good quality, they are so adorable, love the way it fits, will buy more. Highly
+                        recommended."</p>
+                    <div class="name">John Smith</div>
+                </div>
+                <div class="testimonial">
+                    <p>"They are so adorable and my grandson loves them!"</p>
+                    <div class="name">Emily Johnson</div>
+                </div>
+                <div class="testimonial">
+                    <p>"I loved them, and my two-year-old was equally happy with his socks. I'll buy them again as a
+                        gift"</p>
+                    <div class="name">Michael Brown</div>
+                </div>
+                <div class="testimonial">
+                    <p>"They are beautiful and stretch quite well."</p>
+                    <div class="name">Sophia Davis</div>
+                </div>
+            </div>
+            <div class="controls">
+                <button class="control" id="prev">&#9664;</button>
+                <button class="control" id="next">&#9654;</button>
+            </div>
+        </section>
+        <section class="features-section">
+            <div class="feature">
+                <i class="fas fa-truck"></i>
+                <h3>Fast Delivery</h3>
+                <p>Get your orders delivered swiftly to your doorstep.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-credit-card"></i>
+                <h3>Fast Checkout</h3>
+                <p>Enjoy a seamless and quick checkout process.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-gem"></i>
+                <h3>Good Quality</h3>
+                <p>Our products are made with the highest quality standards.</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+
+                    <li><i class="fas fa-envelope"></i> info@globexoa.site</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe to get special offers and updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" class="footer-input">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 globexoa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Display featured products on homepage (limit to 4 products)
+        async function loadFeaturedProducts() {
+            try {
+                const response = await fetch('products.json');
+                const data = await response.json();
+                const featuredProducts = data.products.slice(0, 3);
+
+                const productsGrid = document.querySelector('.products-grid');
+                productsGrid.innerHTML = featuredProducts.map(product => `
+            <div class="product-card" onclick="navigateToProduct('${product.id}')">
+                <div class="product-image-container">
+                    <img src="${product.image}" alt="${product.name}">
+                    ${product.badge ? `<div class="product-badge">${product.badge}</div>` : ''}
+                </div>
+                <div class="product-details">
+                    <h3>${product.name}</h3>
+                    <p class="price"><i class="fas fa-tag"></i> $${product.price}</p>
+                    <p class="description"><i class="fas fa-star"></i> ${product.description}</p>
+                    <button class="view-details">
+                        Shop Now <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        `).join('');
+            } catch (error) {
+                console.error('Error loading featured products:', error);
+            }
+        }
+
+        // Initialize featured products
+        document.addEventListener('DOMContentLoaded', loadFeaturedProducts);
+    </script>
+    <script>
+        const slider = document.querySelector('.testimonial-slider');
+        const testimonials = document.querySelectorAll('.testimonial');
+        const prevBtn = document.getElementById('prev');
+        const nextBtn = document.getElementById('next');
+
+        let index = 0;
+
+        function updateSlider() {
+            const width = testimonials[0].offsetWidth;
+            slider.style.transform = `translateX(-${index * width}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            index = (index + 1) % testimonials.length;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            index = (index - 1 + testimonials.length) % testimonials.length;
+            updateSlider();
+        });
+
+        window.addEventListener('resize', updateSlider);
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let lastScrollTop = 0;
+            const header = document.querySelector('header');
+
+            if (!header) {
+                console.error('Header element not found');
+                return;
+            }
+
+            window.addEventListener('scroll', () => {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                console.log(`ScrollTop: ${scrollTop}, LastScrollTop: ${lastScrollTop}`); // Debugging line
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scroll down
+                    header.classList.add('hidden-header');
+                } else {
+                    // Scroll up
+                    header.classList.remove('hidden-header');
+                }
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
