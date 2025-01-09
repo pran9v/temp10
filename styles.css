@@ -1402,9 +1402,10 @@ p {
     }
     
     .hero-content h2 {
-        color:rgb(255, 77, 77);
+        color:rgb(251, 251, 251);
         font-size: 0.5rem;
         margin-bottom: 1.5rem;
+        padding-top: 1rem;
         text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
         //background-color: rgb(255, 27, 106);
         max-width: 150px;
@@ -1539,12 +1540,13 @@ p {
     }
 
     .hero-content h1 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .hero-content h2 {
         font-size: 1rem;
         max-width: 300px;
+        text-shadow: none
     }
 
     .cta-button {
